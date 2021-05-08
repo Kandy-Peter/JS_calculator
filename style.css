@@ -1,0 +1,121 @@
+
+      body {
+        font-family: "Share Tech Mono", "Segoe UI", Tahoma, Geneva, Verdana,
+          sans-serif;
+        overflow: hidden;
+        background-color: #ffffff;
+        
+      }
+      #main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+      }
+      #calculator {
+        width: 23rem;
+        background-color: #fcfcfc;
+        border: 2px dashed black;
+      }
+      #screen {
+        width: 100%;
+        min-height: 5rem;
+        overflow-wrap: break-word;
+        font-family: digital;
+        font-size: 2rem;
+        background-color: #00000029;
+        text-align: right;
+        color: #000000;
+        display: flex;
+        flex-direction: column;
+        padding: 0.3rem 0.3rem;
+        box-sizing: border-box;
+      }
+      .row-con {
+        display: grid;
+        height: 100%;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+      }
+      .row-con > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(11, 26, 18);
+        /*color: #fff;*/
+        font-weight: bold;
+        border: 0.5px solid rgb(51, 51, 51);
+        cursor: pointer;
+        font-size: 1.4rem;
+      }
+      .row-con > div:hover {
+        background-color: #b1f1b6;
+        border: 0.5px solid rgb(255, 255, 255);
+      }
+      .row-con > div:active {
+        transform: scale(0.9);
+      }
+      .cal-pad {
+        height: 25rem;
+      }
+      .touch-eq {
+        background-color: #00ff15 !important;
+        font-size: 1.8rem;
+        font-weight: bolder;
+        grid-area: 4/4/6/4;
+      }
+      .touch-eq:hover {
+        background-color: #f57945 !important;
+      }
+      .num{
+        color: #fff;
+      }
+      .touch-del{
+        background-color: rgb(7, 96, 179);
+        color: white;
+      }
+      .sign {
+        background-color: rgb(255, 255, 255) !important;
+        font-family: digital;
+        color: black;
+      }
+      .sign:hover {
+        background-color: rgb(41, 161, 231) !important;
+      }
+      span.type {
+        font-size: 3rem;
+      }
+      span.result {
+        font-size: 1.5rem;
+            display: block;
+      }
+      .touch_AC {
+        background-color: rgb(206, 0, 0) !important;
+        font-family: "Share Tech Mono" !important;
+        font-weight: normal !important;
+      }
+      .touch_AC:hover {
+        background-color: rgb(206, 111, 111) !important;
+      }
+      .developer{
+        color: black;
+        font: 2rem bold;
+        margin: 20px;
+      }
+      @media (max-width: 400px) {
+        #calculator {
+          width: 20rem;
+        }
+        .cal-pad {
+          height: 22rem;
+        }
+      }
+      @media (max-width: 300px) {
+        #calculator {
+          width: 15rem;
+        }
+        .cal-pad {
+          height: 18rem;
+        }
+      }
